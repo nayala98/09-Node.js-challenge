@@ -58,7 +58,7 @@ const questions = [
         message: "What does the user need to know about contributing to the repository?",
         name: "contribute"
     },
-]
+];
 
 // Function to promptUser returns answers object
 const promptUser = () => {
@@ -67,13 +67,14 @@ const promptUser = () => {
 };
 
 // Function to write README file
-function writeToFile(fileName, data) {
+const writeToFile = (fileName, data) => {
     return writeFileAsync(fileName, data);
-}
+};
 
 // Function to start program
-async function init() {
+const init = async () => {
     try {
+        console.log("Welcome to the README generator.\nPlease answer the following questions:")
         // Ask user for answers to questions
         const answers = await promptUser();
         // Create markdown content from user answers
@@ -84,8 +85,8 @@ async function init() {
         console.log("README.md created");
     } catch (err) {
         console.log(err);
-    }
-}
+    };
+};
 
 // Function call to initialize program
 init();
