@@ -86,6 +86,7 @@ const init = async () => {
         // Notify user that file has been written
         console.log("README.md created");
     } catch (err) {
+        console.error("Error creating README! File not created.")
         console.log(err);
     };
 };
