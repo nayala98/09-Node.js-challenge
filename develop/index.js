@@ -84,7 +84,7 @@ const init = async () => {
         // Write markdown content to README.md file
         await writeToFile("./output/README.md", fileContent);
         // Notify user that file has been written
-        console.log("README.md created");
+        console.log("README.md created in output folder.");
     } catch (err) {
         console.error("Error creating README! File not created.")
         console.log(err);
@@ -93,9 +93,3 @@ const init = async () => {
 
 // Function call to initialize program
 init();
-
-/*
-// Run the README generator
-promptUser().then((answers) => {
-    console.log(answers);
-});*/
