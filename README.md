@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [Description](#description)
+* [Demonstration](#demonstration)
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
